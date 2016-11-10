@@ -1,0 +1,12 @@
+.button {
+  display: flex;
+  padding: (8px - 2px) (16px - 2px);
+
+  &.-dim {
+    opacity: 0.5;
+  }
+
+  &.-hide {
+    opacity: 0.125;
+  }
+}

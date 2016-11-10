@@ -1,0 +1,21 @@
+.page-item {
+  width: calc((100% / 4) - 8px);
+  margin: 4px;
+}
+
+.page-grid {
+  display: flex;
+  flex-flow: wrap;
+  margin: 8px;
+  padding: 4px;
+
+  &.-small {
+    padding: 6px;
+
+    .page-item {
+      width: calc((100% / 8) - 4px);
+      margin: 2px;
+      font-size: 0.5em;
+    }
+  }
+}

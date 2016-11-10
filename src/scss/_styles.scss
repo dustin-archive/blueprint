@@ -1,0 +1,29 @@
+._dashed {
+  border: dashed 2px $blue-2;
+  border-radius: 8px;
+}
+
+._touchable {
+  border: solid 2px $blue-1;
+  border-radius: 4px;
+  color: $blue-1;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border-color: $blue-1;
+    background: $blue-3;
+  }
+
+  &:active, &.-active {
+    color: $white;
+    background: $blue-2;
+  }
+
+  &.-active {
+    &:hover {
+      border-color: $red-1;
+      background: $red-2;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.check {
+  display: flex;
+  font-size: 2em;
+
+  &::before {
+    display: block;
+    padding: 0 0 75%;
+    content: '';
+  }
+
+  > * {
+    margin: auto;
+  }
+}

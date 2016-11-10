@@ -1,0 +1,17 @@
+include main
+
++html
+  +head-global
+
+    //- vue component templates
+    include components/check/main
+    include components/page/main
+    include components/pagination/main
+
+  body
+
+    #app.app
+      page
+      pagination
+
+    +script('index.js')
