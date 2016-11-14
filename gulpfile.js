@@ -28,7 +28,7 @@ var prod = false
 // =============================================================================
 
 gulp.task('html', () => {
-  return gulp.src(['src/*.pug', 'src/*.jade'])
+  return gulp.src(['src/*.pug', '!src/main.pug', '!src/mixins.pug'])
     .pipe(plumber())
     .pipe(pug({
       pretty: !prod,

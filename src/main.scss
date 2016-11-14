@@ -1,39 +1,29 @@
 // utilities
 @import 'mint-sass/scss/main';
 
-// variables
+//
 @import 'scss/variables';
-
-// fonts
 @import 'scss/fonts';
 
 // reset
 @import 'pilot-reset/scss/main';
 
-* {
-  &::selection {
-    background: $blue-2;
-  }
+*::selection {
+  background: $blue-2;
 }
 
 body {
   font: 400 1rem/1 Gidole, sans-serif;
 }
 
-.app {
-  // max-width: 75em;
-  // margin: auto;
-}
+// .app {}
 
 // vue component templates
 @import 'check/main';
 @import 'page/main';
 @import 'pagination/main';
 
-// parts
-@import 'parts/button/main';
-
 // modifiers
-// @import 'scss/layer';
-// @import 'scss/modifiers';
-@import 'scss/styles';
+@import 'scss/modifiers/layout';
+@import 'scss/modifiers/style';
+@import 'scss/button';

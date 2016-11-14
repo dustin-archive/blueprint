@@ -2,11 +2,15 @@ module.exports = {
   template: '#page',
   computed: {
     items: function () {
-      var page = this.$store.state.page, range = page.range, offset = range * (page.number - 1)
-      return _.slice(page.items, offset, range + offset)
+      return this.$store.getters.page_items
     },
     queue: function () {
       return this.$store.state.compare.queue
+    }
+  },
+  methods: {
+    clear: function () {
+      this.$store.commit('compare_clear')
     }
   },
   components: {

@@ -8,8 +8,7 @@
   "dependencies": {
     "mint-sass": "^2.1.3",
     "pilot-frame": "^5.0.1",
-    "pilot-reset": "^1.2.2",
-    "taffy-break": "^4.0.0"
+    "pilot-reset": "^1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.2",

@@ -7,6 +7,9 @@ module.exports = {
   mutations: {
     compare_place: function (state, id) {
       state.queue = toggle_queue(state.queue, id)
+    },
+    compare_clear: function (state) {
+      state.queue = []
     }
   }
 }
