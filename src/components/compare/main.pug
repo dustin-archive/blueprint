@@ -1,9 +1,20 @@
 +template#compare
-  .compare
-    .page-grid.-small._dashed
-      .page-item(v-for='id in queue')
+  div
+    .compare-grid._dashed
+      .compare-item(v-for='id in queue')
         check(v-bind:id='id') {{ id }}
-
     .compare-ribbon
-      .button._touchable(v-on:click='clear(), close()') Clear
-      .button._touchable(v-on:click='compare()') Compare
+      div
+        .button._touchable(v-on:click='clear()') Clear
+        .button._touchable(v-on:click='compare()') Compare
+
++template#compare_modal
+  div
+    .compare-grid._dashed
+      .compare-item.-modal(v-for='id in queue')
+        check(v-bind:id='id') {{ id }}
+    .compare-ribbon
+      div
+        .button._touchable(v-on:click='clear(), close()') Clear
+      div
+        .button._touchable(v-on:click='close()') Close

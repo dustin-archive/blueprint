@@ -13,7 +13,8 @@ new Vue({
     }
   },
   components: {
-    compare: require('components/compare'),
+    compare: require('components/compare').compare,
+    compare_modal: require('components/compare').compare_modal,
     modal: require('components/modal'),
     page: require('components/page'),
     pagination: require('components/pagination')

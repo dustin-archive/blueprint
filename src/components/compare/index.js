@@ -1,5 +1,4 @@
-module.exports = {
-  template: '#compare',
+var share = {
   computed: {
     queue: function () {
       return this.$store.state.compare.queue
@@ -8,15 +7,29 @@ module.exports = {
   methods: {
     clear: function () {
       this.$store.commit('compare_clear')
-    },
-    close: function () {
-      this.$store.dispatch('modal_close')
-    },
-    compare: function () {
-      this.$store.dispatch('modal_open', 'compare')
     }
   },
   components: {
     check: require('components/check')
+  }
+}
+
+exports.compare = {
+  template: '#compare',
+  mixins: [share],
+  methods: {
+    compare: function () {
+      this.$store.dispatch('modal_open', 'compare')
+    }
+  }
+}
+
+exports.compare_modal = {
+  template: '#compare_modal',
+  mixins: [share],
+  methods: {
+    close: function () {
+      this.$store.dispatch('modal_close')
+    }
   }
 }

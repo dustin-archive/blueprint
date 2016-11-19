@@ -6,7 +6,6 @@ module.exports = {
     }
   },
   components: {
-    check: require('components/check'),
-    compare: require('components/compare')
+    check: require('components/check')
   }
 }

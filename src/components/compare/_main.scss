@@ -1,4 +1,30 @@
 .compare-ribbon {
   display: flex;
+  justify-content: space-between;
   margin: 8px;
+
+  > * {
+    display: flex;
+
+    + * {
+      margin: 0 0 0 8px;
+    }
+  }
+}
+
+.compare-item {
+  width: calc((100% / 8) - 8px);
+  margin: 4px;
+
+  &.-modal {
+    width: calc((100vw / 4) - 20px);
+    max-width: calc((960px / 4) - 20px);
+  }
+}
+
+.compare-grid {
+  display: flex;
+  flex-flow: wrap;
+  margin: 8px;
+  padding: 4px;
 }

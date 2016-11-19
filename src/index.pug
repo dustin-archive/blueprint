@@ -13,14 +13,13 @@ include _main
   body
 
     #app.app
-      ._layer.-wrap
+      ._layer.-wrap._wrap
+        compare
         page
         pagination
       transition(name='fade')
-        ._layer.-wrap(v-if='modal === "compare"')
+        ._layer.-wrap._wrap(v-if='modal === "compare"')
           modal
-            compare
-      //- ._layer.-wrap
-      //-   h1 raomdolskdfj
+            compare_modal
 
     +script('index.js')
