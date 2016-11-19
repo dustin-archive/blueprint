@@ -28,7 +28,7 @@ var prod = false
 // =============================================================================
 
 gulp.task('html', () => {
-  return gulp.src(['src/*.pug', '!src/main.pug', '!src/mixins.pug'])
+  return gulp.src(['src/*.pug', '!src/_*.pug'])
     .pipe(plumber())
     .pipe(pug({
       pretty: !prod,
@@ -38,10 +38,10 @@ gulp.task('html', () => {
 })
 
 gulp.task('css', () => {
-  return gulp.src(['src/main.scss', 'src/notify.scss'])
+  return gulp.src(['src/main.scss'])
     .pipe(sass({
       outputStyle: prod ? 'compressed' : 'expanded',
-      includePaths: ['node_modules', 'src/components']
+      includePaths: ['node_modules']
     }).on('error', sass.logError))
     .pipe(postcss([ autoprefixer ]))
     .pipe(gulp.dest('dist'))
