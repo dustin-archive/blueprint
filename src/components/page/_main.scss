@@ -1,11 +1,7 @@
-.page-compare {
-  display: flex;
-  width: 100%; // always pushed to bottom
-  margin: 4px;
-}
-
 .page-item {
   width: calc((100% / 4) - 8px);
+  // min-width: calc((100vw / 4) - 16px);
+  // max-width: calc((960 / 4) - 16px);
   margin: 4px;
 }
 
@@ -18,6 +14,8 @@
   &.-small {
     .page-item {
       width: calc((100% / 8) - 8px);
+      // min-width: calc((100vw / 8) - 8px);
+      // max-width: calc((960 / 8) - 8px);
       font-size: 0.5em;
     }
   }

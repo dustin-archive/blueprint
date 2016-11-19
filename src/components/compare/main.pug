@@ -4,6 +4,6 @@
       .page-item(v-for='id in queue')
         check(v-bind:id='id') {{ id }}
 
-      .page-compare
-        .button._touchable(v-on:click='clear(), close()') Clear
-        .button._touchable(v-on:click='compare()') Compare
+    .compare-ribbon
+      .button._touchable(v-on:click='clear(), close()') Clear
+      .button._touchable(v-on:click='compare()') Compare
