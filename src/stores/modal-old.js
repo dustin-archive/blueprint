@@ -6,18 +6,18 @@ module.exports = {
     modal: null
   },
   mutations: {
-    modal_update: function (state, queue) {
-      state.queue = queue
+    modal_update: function (state, arr) {
+      var queue = state.queue
+      state.queue = queue_push(queue, arr[0], arr[1])
       state.modal = queue[queue.length - 1]
     }
   },
   actions: {
     modal_open: function (context, modal) {
-      context.commit('modal_update', queue_push(context.state.queue, modal, true))
+      context.commit('modal_update', [modal, true])
     },
     modal_close: function (context) {
-      var state = context.state
-      context.commit('modal_update', queue_push(state.queue, state.modal, false))
+      context.commit('modal_update', [context.state.modal, false])
     }
   }
 }

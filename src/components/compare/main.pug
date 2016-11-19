@@ -1,0 +1,9 @@
++template#compare
+  .compare
+    .page-grid.-small._dashed
+      .page-item(v-for='id in queue')
+        check(v-bind:id='id') {{ id }}
+
+      .page-compare
+        .button._touchable(v-on:click='clear(), close()') Clear
+        .button._touchable(v-on:click='compare()') Compare

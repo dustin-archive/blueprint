@@ -19,11 +19,15 @@ body {
 // .app {}
 
 // vue component templates
-@import 'check/main';
-@import 'page/main';
-@import 'pagination/main';
+@import 'components/check/main';
+@import 'components/modal/main';
+@import 'components/page/main';
+@import 'components/pagination/main';
+
+// scss
+@import 'scss/button';
+@import 'scss/transitions';
 
 // modifiers
 @import 'scss/modifiers/layout';
 @import 'scss/modifiers/style';
-@import 'scss/button';

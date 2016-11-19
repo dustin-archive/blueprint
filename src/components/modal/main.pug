@@ -1,3 +1,7 @@
 +template#modal
-  .modal._layer(v-on:click='place()' v-bind:class='active')
-    slot
+  .modal
+    .modal-overlay._layer.-inner(v-on:click='close()')
+    .modal-box._solid
+      slot
+      .modal-ribbon
+        .button._touchable(v-on:click='close()') Close

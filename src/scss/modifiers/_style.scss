@@ -1,6 +1,6 @@
 ._solid {
-  border: dashed 2px $blue-1;
-  border-radius: 8px;
+  border: solid 2px $blue-1;
+  border-radius: 4px;
 }
 
 ._dashed {
@@ -16,7 +16,6 @@
   user-select: none;
 
   &:hover {
-    border-color: $blue-1;
     background: $blue-3;
   }
 

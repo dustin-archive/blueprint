@@ -1,17 +1,26 @@
-include main
+include _main
 
 +html
   +head-global
 
     //- vue component templates
     include components/check/main
+    include components/compare/main
+    include components/modal/main
     include components/page/main
     include components/pagination/main
 
   body
 
     #app.app
-      page
-      pagination
+      ._layer.-wrap
+        page
+        pagination
+      transition(name='fade')
+        ._layer.-wrap(v-if='modal === "compare"')
+          modal
+            compare
+      //- ._layer.-wrap
+      //-   h1 raomdolskdfj
 
     +script('index.js')

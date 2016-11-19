@@ -1,4 +1,4 @@
-var toggle_queue = require('./lib/toggle_queue')
+var queue_toggle = require('./lib/queue_toggle')
 
 module.exports = {
   state: {
@@ -6,7 +6,7 @@ module.exports = {
   },
   mutations: {
     compare_place: function (state, id) {
-      state.queue = toggle_queue(state.queue, id)
+      state.queue = queue_toggle(state.queue, id)
     },
     compare_clear: function (state) {
       state.queue = []
