@@ -1,5 +1,7 @@
+var fs = require('fs')
+
 module.exports = {
-  template: '#check',
+  template: fs.readFileSync(__dirname + '/template.html', 'utf8'),
   props: ['id'],
   computed: {
     active: function () {

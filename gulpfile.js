@@ -12,6 +12,7 @@ const autoprefixer = require('autoprefixer')
 const pug = require('gulp-pug')
 
 const browserify = require('browserify')
+const brfs = require('brfs')
 const source = require('vinyl-source-stream')
 const uglifyify = require('uglifyify')
 
@@ -50,6 +51,7 @@ gulp.task('css', () => {
 gulp.task('js', () => {
   var bundler = browserify('./src/index.js', { paths: ['./src'] })
   if (prod) bundler.transform({ global: true }, 'uglifyify')
+  bundler.transform('brfs')
   return bundler.bundle()
     .pipe(source('index.js'))
     .pipe(gulp.dest('dist'))
