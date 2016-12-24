@@ -1,12 +1,4 @@
-._solid {
-  border: solid 2px $blue-1;
-  border-radius: 4px;
-}
-
-._dashed {
-  border: dashed 2px $blue-2;
-  border-radius: 8px;
-}
+@import '../../../global';
 
 ._touchable {
   border: solid 2px $blue-1;

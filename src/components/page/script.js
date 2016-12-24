@@ -1,11 +1,10 @@
 module.exports = {
-  template: '#page',
   computed: {
     items: function () {
       return this.$store.getters.page_items
     }
   },
   components: {
-    check: require('components/check')
+    check: require('../check/check.vue')
   }
 }

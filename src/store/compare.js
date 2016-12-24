@@ -1,4 +1,4 @@
-var queue_toggle = require('./lib/queue_toggle')
+var queue_toggle = require('./lib/queue_toggle.js')
 
 module.exports = {
   state: {

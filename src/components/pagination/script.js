@@ -1,5 +1,4 @@
 module.exports = {
-  template: '#pagination',
   computed: {
     number: function () {
       return this.$store.state.page.number
