@@ -1,4 +1,0 @@
-module.exports = {
-  template: '#template',
-
-}
