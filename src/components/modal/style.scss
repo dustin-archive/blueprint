@@ -1,0 +1,16 @@
+@import '../../global';
+
+.modal-box {
+  background: $white;
+}
+
+.modal-overlay {
+  background: rgba($white, 0.75);
+}
+
+.modal {
+  display: flex;
+  width: calc(100% - 16px);
+  height: 100%;
+  margin: 8px;
+}

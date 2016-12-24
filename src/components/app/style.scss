@@ -1,0 +1,22 @@
+@import '../../global';
+@import 'fonts';
+
+// reset
+// @import '../../../node_modules/pilot-reset/scss/main';
+
+*::selection {
+  background: $blue-2;
+}
+
+body {
+  font: 400 1rem/1 Gidole, sans-serif;
+}
+
+// scss
+@import 'button';
+@import 'transitions';
+
+// modifiers
+@import 'modifiers/borders';
+@import 'modifiers/events';
+@import 'modifiers/layout';
