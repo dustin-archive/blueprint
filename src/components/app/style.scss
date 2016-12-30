@@ -1,8 +1,6 @@
-@import '../../global';
-@import 'fonts';
+@import 'variables';
 
-// reset
-// @import '../../../node_modules/pilot-reset/scss/main';
+@import 'fonts';
 
 *::selection {
   background: $blue-2;
