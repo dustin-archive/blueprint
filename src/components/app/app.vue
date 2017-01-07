@@ -2,7 +2,7 @@
 <script src='script.js'></script>
 <template>
   <div id='#app' class='app'>
-    <div class='_layer -wrap _wrap'>
+    <div class='_layer -inner -wrap _wrap'>
       <compare></compare>
       <page></page>
       <pagination></pagination>
