@@ -1,6 +1,6 @@
 module.exports = {
   mixins: [
-    require('./compare-share.js')
+    require('../compare/mixin.js')
   ],
   methods: {
     close: function () {

@@ -1,5 +1,5 @@
 <style src='style.scss' lang='scss'></style>
-<script src='compare.js'></script>
+<script src='script.js'></script>
 <template>
   <div>
     <div class='compare-grid _dashed'>
