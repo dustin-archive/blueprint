@@ -5,10 +5,10 @@ module.exports = {
     }
   },
   components: {
-    compare: require('../compare/compare.vue'),
-    'compare-modal': require('../compare/compare-modal.vue'),
-    modal: require('../modal/modal.vue'),
-    page: require('../page/page.vue'),
-    pagination: require('../pagination/pagination.vue')
+    compare: require('../compare/main.vue'),
+    'compare-modal': require('../compare-modal/main.vue'),
+    modal: require('../modal/main.vue'),
+    page: require('../page/main.vue'),
+    pagination: require('../pagination/main.vue')
   }
 }

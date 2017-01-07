@@ -5,6 +5,6 @@ module.exports = {
     }
   },
   components: {
-    check: require('../check/check.vue')
+    check: require('../check/main.vue')
   }
 }
