@@ -1,9 +1,11 @@
 @import 'variables';
 @import 'fonts';
-@import 'pilot-reset/scss/main';
+@import 'pilot-reset/main';
 
-*::selection {
-  background: $blue-2;
+* {
+  &::selection {
+    background: $blue-2;
+  }
 }
 
 body {
