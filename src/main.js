@@ -13,6 +13,6 @@ new Vue({
     }
   }),
   render: function (h) {
-    return h(require('./components/app/main.vue'))
+    return h(require('./views/app/main.vue'))
   }
 })

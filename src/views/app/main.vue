@@ -1,7 +1,7 @@
 <style src='style.scss' lang='scss'></style>
 <script src='script.js'></script>
 <template>
-  <div id='#app' class='app'>
+  <div class='app'>
     <div class='_layer -inner -wrap _wrap'>
       <compare></compare>
       <page></page>

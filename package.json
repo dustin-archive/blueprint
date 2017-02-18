@@ -8,25 +8,26 @@
     "serve": "http-server -osc 1 -a localhost",
     "dev": "run-p watchify serve",
     "build": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -c warnings=false -m > dist/build.js",
-    "force-update": "npm install --save pilot-reset vue vuex",
-    "force-update-dev": "npm install --save-dev browserify browserify-hmr cross-env envify http-server node-sass npm-run-all uglify-js vueify watchify"
+    "force-update": "npm install --save lodash pilot-reset vue vuex",
+    "force-update-dev": "npm install --save-dev browserify browserify-hmr browserify-shim cross-env envify http-server node-sass npm-run-all uglify-js vueify watchify"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
     "pilot-reset": "^4.0.0",
     "vue": "^2.1.10",
-    "vuex": "^2.1.1"
+    "vuex": "^2.1.2"
   },
   "devDependencies": {
-    "browserify": "^13.3.0",
+    "browserify": "^14.1.0",
     "browserify-hmr": "^0.3.5",
     "cross-env": "^3.1.4",
     "envify": "^4.0.0",
     "http-server": "^0.9.0",
-    "node-sass": "^4.3.0",
+    "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.1",
     "uglify-js": "^2.7.5",
     "vueify": "^9.4.0",
-    "watchify": "^3.8.0"
+    "watchify": "^3.9.0"
   },
   "browserify": {
     "transform": [
