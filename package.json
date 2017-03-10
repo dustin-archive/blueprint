@@ -4,7 +4,7 @@
   "author": "Dustin Dowell <dustindowell22@gmail.com>",
   "private": true,
   "scripts": {
-    "watchify": "watchify -v -p browserify-hmr -e src/main.js -o dist/build.js",
+    "watchify": "watchify -v -p browserify-hmr src/main.js -o dist/build.js",
     "serve": "http-server -osc 1 -a localhost",
     "dev": "run-p watchify serve",
     "build": "cross-env NODE_ENV=production browserify -g envify src/main.js | uglifyjs -c warnings=false -m > dist/build.js",
