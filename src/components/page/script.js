@@ -5,6 +5,6 @@ module.exports = {
     }
   },
   components: {
-    check: require('../check/main.vue')
+    'v-card': require('../card/main.vue')
   }
 }

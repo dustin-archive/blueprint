@@ -1,0 +1,84 @@
+@import 'global';
+
+$border: 4px;
+$height: 56px;
+$gutter: 8px;
+
+@mixin link {
+  display: flex;
+  align-items: center;
+  padding: 0 $gutter;
+  white-space: nowrap;
+}
+
+@mixin hover {
+  color: $white;
+  background: $red;
+}
+
+.appbar-nav {
+  display: flex;
+
+  a {
+    @include link;
+
+    &.-active {
+      padding: $border $gutter 0;
+      border-bottom: solid $border $red;
+      color: $red;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      &:not(.-active) {
+        @include hover;
+      }
+    }
+  }
+}
+
+.appbar-toggle {
+  @include link;
+  height: $height;
+
+  &:hover {
+    @include hover;
+  }
+}
+
+.appbar-inner {
+  display: flex;
+  width: 100%;
+}
+
+.appbar-logo {
+  padding: $gutter 0 $gutter $gutter;
+
+  img {
+    height: $height - ($gutter * 2);
+  }
+}
+
+// .appbar-wrap {
+//   display: flex;
+//   // max-width: $break-max; // taffy-break
+//   height: 100%;
+//   margin: auto;
+// }
+
+.appbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $height;
+  color: $white;
+  background: $blue;
+  user-select: none;
+}
+
+// @include break-max(6) {
+//   .appbar-inner {
+//     display: none;
+//   }
+// }

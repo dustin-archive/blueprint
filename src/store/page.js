@@ -1,8 +1,7 @@
 var slice = require('lodash/slice')
 
 function generate_array (value) {
-  var i = 1, result = []
-  while (i <= value) { result.push(i); i++ }
+  for (var i = 0, result = []; i < value; result[i++] = i);
   return result
 }
 
@@ -10,6 +9,8 @@ var generated = generate_array(100)
 
 module.exports = {
   state: {
+    // cache: [],
+    // data: [],
     number: 1,
     range: 12,
     items: generated,
@@ -20,7 +21,7 @@ module.exports = {
       return slice(state.items, offset, range + offset)
     },
     page_last: function (state) {
-      return Math.ceil(state.items.length / state.range)
+      return ~~(state.items.length / state.range) + 1 // Math.ceil
     }
   },
   mutations: {

@@ -9,10 +9,10 @@
     </div>
     <div class='compare-ribbon'>
       <div>
-        <div class='button _touchable' v-on:click='clear(), close()'>Clear</div>
+        <div class='button _touch' v-on:click='clear, close'>Clear</div>
       </div>
       <div>
-        <div class='button _touchable' v-on:click='close()'>Close</div>
+        <div class='button _touch' v-on:click='close'>Close</div>
       </div>
     </div>
   </div>

@@ -5,7 +5,11 @@ module.exports = {
     }
   },
   components: {
-    compare: require('../../components/compare/main.vue'),
+    'v-appbar': require('../../components/appbar/main.vue'),
+
+    'v-compare': require('../../components/compare/main.vue'),
+
+
     'compare-modal': require('../../components/compare-modal/main.vue'),
     modal: require('../../components/modal/main.vue'),
     page: require('../../components/page/main.vue'),

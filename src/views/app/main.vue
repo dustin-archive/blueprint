@@ -3,7 +3,7 @@
 <template>
   <div class='app'>
     <div class='_layer -inner -wrap _wrap'>
-      <compare></compare>
+      <v-compare></v-compare>
       <page></page>
       <pagination></pagination>
     </div>
@@ -14,5 +14,6 @@
         </modal>
       </div>
     </transition>
+    <!-- <v-appbar></v-appbar> -->
   </div>
 </template>

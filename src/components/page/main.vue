@@ -4,7 +4,7 @@
   <div class='page'>
     <div class='page-grid _dashed'>
       <div class='page-item' v-for='id in items'>
-        <check v-bind:id='id'>{{ id }}</check>
+        <v-card v-bind:id='id'>{{ id }}</v-card>
       </div>
     </div>
   </div>

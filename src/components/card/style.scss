@@ -1,0 +1,52 @@
+@import 'global';
+
+$gutter: 8px;
+
+.card-compare {
+  // $gutter: $gutter * 2;
+  // position: absolute;
+  // right: $gutter;
+  // bottom: $gutter;
+  // left: $gutter;
+  opacity: 0;
+
+  &.-active {
+    opacity: 1;
+  }
+
+  > div {
+    margin: auto;
+  }
+}
+
+.card-thumb {
+  width: 100%;
+  border-radius: 4px;
+  background: $blue-3;
+
+  &::before {
+    display: block;
+    padding: 0 0 75%;
+    content: '';
+  }
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  padding: $gutter;
+
+  &:hover {
+    .card-compare {
+      opacity: 1;
+    }
+  }
+
+  > * + * {
+    margin: $gutter 0 0;
+  }
+
+  > h1 {
+    text-align: center;
+  }
+}
